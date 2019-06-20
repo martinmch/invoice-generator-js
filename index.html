@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Faktura </title>
+	<meta name="viewport" content="width=device-width">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+	<div class="invoice-box">
+		<table cellpadding="0" cellspacing="0" id="tabel">
+			<tr class="top">
+				<td colspan="4">
+					<table>
+						<tr>
+							<td class="title">
+								<img src="https://www.sparksuite.com/images/logo.png" style="width:100%; max-width:300px;">
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                Ordrenr #: <span id="ordrenr"></span><br>
+                                <span id="dato"></span>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="information">
+                <td colspan="4">
+                    <table>
+                        <tr>
+                            <td>
+                                Struer Høker<br>
+                                Østergade 16<br>
+                                7600 Struer
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <span id="kundenavn"></span><br>
+                                Antal indkøb: <span id="indkob"></span>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        
+            <tr class="heading">
+                <td>
+                    Vare
+                </td>
+                <td>
+                    Antal
+                </td>
+                <td>
+                    Pris
+                </td>
+                <td>
+                    Total pris
+                </td>
+            </tr>
+        </table>
+    </div>
+    <ul>
+        <li><a href="kunder.html">Kundetabellen</a></li>
+        <li><a href="varer.html">Varetabellen</a></li>
+        <li><a href="ordrer.html">Ordretabellen</a></li>
+        <li><a href="ordrelinier.html">Ordrelinietabellen</a></li>
+    </ul>
+    <script src="kode/data.js"></script>
+    <script src="kode/visFaktura.js"></script> 
+    
+</body>
+</html>
